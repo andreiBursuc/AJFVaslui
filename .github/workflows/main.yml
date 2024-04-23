@@ -16,11 +16,18 @@ jobs:
     runs-on: macos-latest
     timeout-minutes: 10
     steps:
-     - uses: actions/checkout@v4
-     - name: Run tests with fastlane
-       working-directory: ./AJFVaslui
-       run: |
-         bundle exec fastlane runTests
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: SetUp Bundler
+      uses: ./setup_bundler_self_hosted
+      with:
+        bundle_without: 'development'
+  
+    - name: Run tests with fastlane
+      working-directory: ./AJFVaslui
+      run: |
+        bundle exec fastlane runTests
 
   sonarcloud:
     name: SonarCloud
