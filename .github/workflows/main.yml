@@ -17,20 +17,10 @@ jobs:
     timeout-minutes: 10
     steps:
      - uses: actions/checkout@v4
-       with:
-         fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-
-     - name: Load and Install Bundle Cache
-       uses: ruby/setup-ruby@v1
-       with:
-        ruby-version: 3.0.6
-        bundler-cache: true
-       env:
-        BUNDLE_WITHOUT: development
-
-      - name: Run tests with fastlane
+     - name: Run tests with fastlane
         working-directory: ./AJFVaslui
-        run: bundle exec fastlane runTests
+        run: |
+          bundle exec fastlane runTests
 
   sonarcloud:
     name: SonarCloud
