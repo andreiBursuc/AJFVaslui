@@ -13,6 +13,7 @@ concurrency:
 jobs:
   verify:
     name: Run tests
+    working-directory: ./AJFVaslui
     runs-on: macos-latest
     timeout-minutes: 10
     steps:
