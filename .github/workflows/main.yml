@@ -18,9 +18,9 @@ jobs:
     steps:
      - uses: actions/checkout@v4
      - name: Run tests with fastlane
-        working-directory: ./AJFVaslui
-        run: |
-          bundle exec fastlane runTests
+       working-directory: ./AJFVaslui
+       run: |
+         bundle exec fastlane runTests
 
   sonarcloud:
     name: SonarCloud
