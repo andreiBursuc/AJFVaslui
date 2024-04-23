@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0">
+    <testsuite name="AJFVasluiTests" tests="2" failures="0" skipped="0" time="0.4651370048522949">
+        <properties>
+          <property name="Configuration" value="Test Scheme Action"/>
+        </properties>
+        <testcase classname="AJFVasluiTests" name="testExample()" time="0.004624009132385254">
+        </testcase>
+        <testcase classname="AJFVasluiTests" name="testPerformanceExample()" time="0.46051299571990967">
+        </testcase>
+    </testsuite>
+</testsuites>
