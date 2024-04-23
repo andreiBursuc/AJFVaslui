@@ -20,6 +20,14 @@ jobs:
       - name: Run tests with fastlane
         working-directory: ./AJFVaslui
         run: bundle exec fastlane runTests
+
+      - name: Load and Install Bundle Cache
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0.6
+          bundler-cache: true
+        env:
+          BUNDLE_WITHOUT: development
   sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
