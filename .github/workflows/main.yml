@@ -20,7 +20,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: SetUp Bundler
-      uses: ./setup_bundler_self_hosted
+      uses: ./gh-actions/setup_bundler_self_hosted
       with:
         bundle_without: 'development'
   
