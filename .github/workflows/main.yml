@@ -13,12 +13,13 @@ concurrency:
 jobs:
   verify:
     name: Run tests
-    working-directory: ./AJFVaslui
     runs-on: macos-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v3
-      - run: bundle exec fastlane runTests
+      - name: Run tests with fastlane
+        working-directory: ./AJFVaslui
+        run: bundle exec fastlane runTests
   sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
