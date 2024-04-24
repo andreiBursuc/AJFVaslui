@@ -16,4 +16,4 @@ runs:
   steps:
   - name: Bundle Install
     shell: bash
-    run: ${{ github.action_path }}/setup_bundler_self_hosted.sh "${{ inputs.bundle_without }}" "${{ inputs.bundle_with }}"
+    run: ${{ github.action_path }}/setup_bundler_self_hosted.sh
