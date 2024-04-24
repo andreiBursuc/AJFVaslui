@@ -15,6 +15,20 @@
             <AutocreatedTestPlanReference>
             </AutocreatedTestPlanReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "71676F312BD8DAE70068ADD8"
+               BuildableName = "AJFVaslui.app"
+               BlueprintName = "AJFVaslui"
+               ReferencedContainer = "container:AJFVaslui.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
