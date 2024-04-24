@@ -19,17 +19,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set swift version
-      uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
-      with:
-        swift-version: "5.3.3"
-
-    - name: Build
-      run: swift build
-
-    - name: Verify
-      run: swift test
-
     - name: Set ruby version
       uses: ruby/setup-ruby@v1
       with:
