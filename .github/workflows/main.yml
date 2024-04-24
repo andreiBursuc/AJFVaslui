@@ -11,6 +11,18 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  verify:
+    name: Run tests
+    runs-on: macos-latest
+    timeout-minutes: 10
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Run tests
+      run: |
+        bundle exec fastlane runTests
+
   sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
