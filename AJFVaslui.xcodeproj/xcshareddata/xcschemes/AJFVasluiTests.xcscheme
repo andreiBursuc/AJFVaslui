@@ -47,16 +47,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "71676F312BD8DAE70068ADD8"
-            BuildableName = "AJFVaslui.app"
-            BlueprintName = "AJFVaslui"
-            ReferencedContainer = "container:AJFVaslui.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
