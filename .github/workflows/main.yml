@@ -19,6 +19,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Set Gemfile path
+      shell: bash
+      run: ./.github/workflows/set-fastlane-helper-gemfile-path.sh
+
     - name: SetUp Bundler
       uses: ./.github/workflows/setup_bundler_self_hosted
   
