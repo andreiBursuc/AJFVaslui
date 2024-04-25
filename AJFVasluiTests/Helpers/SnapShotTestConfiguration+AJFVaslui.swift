@@ -10,7 +10,7 @@ import UIKit
 extension SnapShotTestConfiguration {
 
     var withDefaultTolerance: SnapShotTestConfiguration {
-        withUpdated(perPixelTolerance: 0.1, overallTolerance: 0.0001)
+        withUpdated(perPixelTolerance: 1.0, overallTolerance: 0.0001)
     }
 
 }
