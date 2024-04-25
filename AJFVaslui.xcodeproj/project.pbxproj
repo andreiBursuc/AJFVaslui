@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7142D8B42BDA6DCD00FFF5BE /* SnapShotTestConfiguration+AJFVaslui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7142D8B32BDA6DCD00FFF5BE /* SnapShotTestConfiguration+AJFVaslui.swift */; };
 		71676F362BD8DAE70068ADD8 /* AJFVasluiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71676F352BD8DAE70068ADD8 /* AJFVasluiApp.swift */; };
 		71676F382BD8DAE70068ADD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71676F372BD8DAE70068ADD8 /* ContentView.swift */; };
 		71676F3A2BD8DAE90068ADD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71676F392BD8DAE90068ADD8 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		7142D8B22BDA65DA00FFF5BE /* AJFVasluiTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AJFVasluiTests.xctestplan; sourceTree = "<group>"; };
+		7142D8B32BDA6DCD00FFF5BE /* SnapShotTestConfiguration+AJFVaslui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SnapShotTestConfiguration+AJFVaslui.swift"; sourceTree = "<group>"; };
 		71676F322BD8DAE70068ADD8 /* AJFVaslui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AJFVaslui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71676F352BD8DAE70068ADD8 /* AJFVasluiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AJFVasluiApp.swift; sourceTree = "<group>"; };
 		71676F372BD8DAE70068ADD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				71676F6B2BDA29990068ADD8 /* FBSnapshotTestHelpers.swift */,
 				71676F6D2BDA29DD0068ADD8 /* SnapShotTestConfiguration.swift */,
+				7142D8B32BDA6DCD00FFF5BE /* SnapShotTestConfiguration+AJFVaslui.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			files = (
 				71676F6C2BDA29990068ADD8 /* FBSnapshotTestHelpers.swift in Sources */,
 				71676F472BD8DAEA0068ADD8 /* AJFVasluiTests.swift in Sources */,
+				7142D8B42BDA6DCD00FFF5BE /* SnapShotTestConfiguration+AJFVaslui.swift in Sources */,
 				71676F6E2BDA29DD0068ADD8 /* SnapShotTestConfiguration.swift in Sources */,
 				71676F692BD931F80068ADD8 /* ContentViewSnashotsTests.swift in Sources */,
 			);

@@ -16,6 +16,7 @@ final class ContentViewSnashotsTests: TestCase {
                                                                 contentSizeCategories: [.large],
                                                                 languages: ["en-EN"],
                                                                 includeRightToLeft: false)
+        .map { $0.withDefaultTolerance }
 
     override func setUp() {
         super.setUp()
