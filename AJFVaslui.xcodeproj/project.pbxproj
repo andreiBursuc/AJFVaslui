@@ -13,6 +13,9 @@
 		71676F3D2BD8DAE90068ADD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71676F3C2BD8DAE90068ADD8 /* Preview Assets.xcassets */; };
 		71676F472BD8DAEA0068ADD8 /* AJFVasluiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71676F462BD8DAEA0068ADD8 /* AJFVasluiTests.swift */; };
 		71676F662BD931BC0068ADD8 /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 71676F652BD931BC0068ADD8 /* iOSSnapshotTestCase */; };
+		71676F692BD931F80068ADD8 /* ContentViewSnashotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71676F682BD931F80068ADD8 /* ContentViewSnashotsTests.swift */; };
+		71676F6C2BDA29990068ADD8 /* FBSnapshotTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71676F6B2BDA29990068ADD8 /* FBSnapshotTestHelpers.swift */; };
+		71676F6E2BDA29DD0068ADD8 /* SnapShotTestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71676F6D2BDA29DD0068ADD8 /* SnapShotTestConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7142D8B22BDA65DA00FFF5BE /* AJFVasluiTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AJFVasluiTests.xctestplan; sourceTree = "<group>"; };
 		71676F322BD8DAE70068ADD8 /* AJFVaslui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AJFVaslui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71676F352BD8DAE70068ADD8 /* AJFVasluiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AJFVasluiApp.swift; sourceTree = "<group>"; };
 		71676F372BD8DAE70068ADD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,9 @@
 		71676F3C2BD8DAE90068ADD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71676F422BD8DAEA0068ADD8 /* AJFVasluiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AJFVasluiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71676F462BD8DAEA0068ADD8 /* AJFVasluiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AJFVasluiTests.swift; sourceTree = "<group>"; };
+		71676F682BD931F80068ADD8 /* ContentViewSnashotsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewSnashotsTests.swift; sourceTree = "<group>"; };
+		71676F6B2BDA29990068ADD8 /* FBSnapshotTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBSnapshotTestHelpers.swift; sourceTree = "<group>"; };
+		71676F6D2BDA29DD0068ADD8 /* SnapShotTestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapShotTestConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +64,7 @@
 		71676F292BD8DAE70068ADD8 = {
 			isa = PBXGroup;
 			children = (
+				7142D8B22BDA65DA00FFF5BE /* AJFVasluiTests.xctestplan */,
 				71676F342BD8DAE70068ADD8 /* AJFVaslui */,
 				71676F452BD8DAEA0068ADD8 /* AJFVasluiTests */,
 				71676F332BD8DAE70068ADD8 /* Products */,
@@ -94,9 +102,28 @@
 		71676F452BD8DAEA0068ADD8 /* AJFVasluiTests */ = {
 			isa = PBXGroup;
 			children = (
+				71676F6A2BDA297D0068ADD8 /* Helpers */,
 				71676F462BD8DAEA0068ADD8 /* AJFVasluiTests.swift */,
+				71676F672BD931D90068ADD8 /* snapshots */,
 			);
 			path = AJFVasluiTests;
+			sourceTree = "<group>";
+		};
+		71676F672BD931D90068ADD8 /* snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				71676F682BD931F80068ADD8 /* ContentViewSnashotsTests.swift */,
+			);
+			path = snapshots;
+			sourceTree = "<group>";
+		};
+		71676F6A2BDA297D0068ADD8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				71676F6B2BDA29990068ADD8 /* FBSnapshotTestHelpers.swift */,
+				71676F6D2BDA29DD0068ADD8 /* SnapShotTestConfiguration.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71676F6C2BDA29990068ADD8 /* FBSnapshotTestHelpers.swift in Sources */,
 				71676F472BD8DAEA0068ADD8 /* AJFVasluiTests.swift in Sources */,
+				71676F6E2BDA29DD0068ADD8 /* SnapShotTestConfiguration.swift in Sources */,
+				71676F692BD931F80068ADD8 /* ContentViewSnashotsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -338,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -415,7 +445,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5M82633YD8;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bursucandreistefan.AJFVasluiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,7 +465,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5M82633YD8;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bursucandreistefan.AJFVasluiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

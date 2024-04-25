@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "FD7E5457-4BDE-4372-86B4-57343FE4551E",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "environmentVariableEntries" : [
+      {
+        "key" : "FB_REFERENCE_IMAGE_DIR",
+        "value" : "$(SRCROOT)\/snapshots\/ReferenceImages"
+      },
+      {
+        "key" : "IMAGE_DIFF_DIR",
+        "value" : "$(SRCROOT)\/snapshots\/FailureDiffs"
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:AJFVaslui.xcodeproj",
+      "identifier" : "71676F412BD8DAEA0068ADD8",
+      "name" : "AJFVasluiTests"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:AJFVaslui.xcodeproj",
+        "identifier" : "71676F412BD8DAEA0068ADD8",
+        "name" : "AJFVasluiTests"
+      }
+    }
+  ],
+  "version" : 1
+}
