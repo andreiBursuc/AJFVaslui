@@ -12,7 +12,9 @@ import iOSSnapshotTestCase
 
 final class ContentViewSnashotsTests: TestCase {
 
-    private let config = SnapShotTestConfiguration.permutations(sizes: [.automaticHeight(targetWidth: 320)],
+    private let config = SnapShotTestConfiguration.permutations(sizes: [.iphone_5_8inch,
+                                                                        .ipadPro,
+                                                                        .iphone_4_7inch],
                                                                 contentSizeCategories: [.large],
                                                                 languages: ["en-EN"],
                                                                 includeRightToLeft: false)
